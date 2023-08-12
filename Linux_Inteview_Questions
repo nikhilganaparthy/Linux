@@ -1,0 +1,19 @@
+1. What do you mean by Linux? Explain its features?
+  Linux is a Unix-like open-source computer operating system (OS) that directly manages hardware and resources of a system such as CPU, 
+  memory, and storage, and manages the communication between software and hardware.It is freely distributable and is generally built around 
+  Linux Kernel (low-level system software that is used to manage hardware resources for users). Furthermore, it can be installed in mobiles, 
+  laptops, computers, notebooks, etc. Flavors of Linux OS include Ubuntu, Debian, SUSE Linux, Gentoo, etc.
+    Some important features of Linux OS include: 
+      -> Free and Open Source: It is freely and easily available to anyone.
+      -> Robust and Adaptable: Linux can operate for prolonged periods without crashing and considered to have very much immune to security threats.
+      -> More secure: It is more secure as it provides security using authentication features like password authentication, 
+          security auditing, and file system access control.
+      -> Multiprogramming System: More than one can function or an application can run simultaneously.
+      -> Application Support: It has its own software repository i.e., place or storage location from where software can be retrieved 
+          so that users can download and install applications.
+      -> Supports customized keywords: There are many different languages used throughout the world, therefore Linux supports the 
+          installation of multiple languages keyboards.
+      -> GUI (Graphical User Interface): It provides an interface for users to interact with the system and allows to use of GUI 
+          applications such as VLC, Firefox, etc.
+
+2. 
