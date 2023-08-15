@@ -1,4 +1,5 @@
 1. What do you mean by Linux? Explain its features?
+
   Linux is a Unix-like open-source computer operating system (OS) that directly manages hardware and resources of a system such as CPU, 
   memory, and storage, and manages the communication between software and hardware.It is freely distributable and is generally built around 
   Linux Kernel (low-level system software that is used to manage hardware resources for users). Furthermore, it can be installed in mobiles, 
@@ -16,4 +17,130 @@
       -> GUI (Graphical User Interface): It provides an interface for users to interact with the system and allows to use of GUI 
           applications such as VLC, Firefox, etc.
 
-2. 
+2. What are basic elements or components of Linux?
+
+   -> Kernel: It is considered a core or main part of Linux and is generally responsible for all major activities of OS such as 
+            process management, device management, etc.  
+   -> System Library: These are special functions or programs with the help of which application programs or system utilities can 
+              access features of the kernel without any requirement of code. It is simply used to implement the functionality of the OS.
+   -> System Utility: These are utility programs that are responsible to perform specialized and individual-level tasks. 
+            They are considered more liable and allow users to manage the computer. 
+   -> Hardware: It is physical hardware that includes items such as a mouse, keyboard, display, CPU, etc. 
+   -> Shell: It is an environment in which we can run our commands, shell scripts, and programs. It is an interface between 
+              user and kernel that hides all complexities of functions of the kernel from the user. It is used to execute commands.
+
+3. What is Kernel? Explain its functions.
+
+    A kernel is considered the main component of Linux OS. It is simply a resource manager that acts as a bridge between 
+    hardware and software. Its main role is to manage hardware resources for users and is generally used to provide an interface 
+    for user-level interaction. A kernel is the first program that is loaded whenever a computer system starts. It is also referred
+    to as low-level system software.
+      ->Its other main functions include: 
+
+          Memory Management
+          Process Management
+          Device Management
+          Storage Management
+          Manage access, and use of various peripherals that are connected to the computer.
+4. What is LILO?
+
+    LILO (Linux Loader) is basically a bootloader for Linux that is used to load Linux into memory and start the OS. 
+    It is also known as a boot manager that facilitates a dual boot of a computer. It can function as either a master 
+    boot program or secondary boot program and performs various functions such as locating kernel, identifying other supporting programs,
+    loading memory, and starting the kernel. If you want to use Linux OS, then you need to install a special bootloader
+    i.e., LILO for it as it allows fast boot of Linux OS.
+
+5. What is swap space?
+
+    Swap space, as the name suggests, is basically a space on a hard disk that is used when the amount of
+    physical memory or RAM is full. It is considered a substitute for physical memory. Its main function is to
+    substitute disk space for RAM memory when real RAM does not have enough space to hold all programs that are executing, 
+    and more space is required. In simple words, it can be used as an extension of RAM by Linux.
+
+6.  What do you mean by a Process States in Linux?
+
+    Linux Process is a type of process that can be in a number of different states. The process enters these states from start till end.
+    Process states in Linux are as follows: 
+     -> New/Ready: In this state, a new process is created and is ready to run.
+     -> Running: In this state, the process is being executed.
+     -> Blocked/Wait: In this state, the process is waiting for input from the user and if doesn't have resources to run such as memory, 
+        file locks, input, then it can remain in a waiting or blocked state.
+     -> Terminated/Completed: In this state, the process has completed the execution or terminated by the OS.
+     -> Zombie: In this state, the process is terminated but information regarding the process still exists and is available
+          in the process table.
+
+7. Name different types of modes used in VI editor.
+
+    Command Mode/Regular Mode: It is the default mode for the vi editors. It is generally used to type commands that usually
+                                perform particular or specific vi functions. To enter this mode from another mode (Insert mode),
+                                one must press [esc]. In simple words, it lets you view the content.  
+    Insertion Mode/Edit Mode: This mode allows you to do text editing, or type text into a file. To enter this mode from another mode
+                              (command mode), one must press [esc]. In simple words, it lets you delete or insert text or content. 
+    Ex Mode/Replacement Mode: This mode is generally used to save the files and execution of the commands. It basically executes
+                                files with different parameters. To enter this mode, one must press [:]. In simple words, it lets 
+                                you overwrite content or text.
+
+8. The maximum length for a filename under Linux is 255 bytes.
+9. Linux that is specially designed by Sun micro system is Solaris.
+10. The typical size for a swap partition under a Linux system should be twice the amount of physical memory or RAM available on the system.
+11. File that is used to automatically mount file systems is a " Fstab file ".
+
+12. What is LVM and why is it required?
+
+    LVM (Logical Volume Management) is basically a tool that provides logical volume management for the Linux kernel.
+    It is being introduced simply to make physical storage device management easier. It also includes allocating disks, striping,
+    mirroring, resizing logical volumes. Its main advantages are increased abstraction, flexibility, and control. It simply allows
+    for flexible disk space management. It is especially required to resize the size of the file system online. In Linux, 
+    the size of the LVM partition can be extended using “lvextend” command and can be reduced using “lvreduce” commands, respectively. 
+
+LVM Layers -> Hard Disk has some partiotions -> Partitions Mapped to Physical Volume -> Physical Volume belongs to Volume Group 
+              Volume Group belongs to -> Logical Volume
+
+13. What is a “/proc” file system?
+
+    Proc file system is a pseudo or virtual file system that provides an interface to the kernel data structure. 
+    It generally includes useful information about processes that are running currently. It can also be used to change 
+    some kernel parameters at runtime or during execution. It is also regarded as a control and information center for the kernel. 
+    All files under this directory are named virtual files.
+
+14. What do you mean by the daemons?
+
+    Daemons also referred to as the background process, is a long-running Linux program that runs in the background. 
+    They do not have any controlling terminal, therefore, they run in the background. These are the processes that are generally 
+    started when the system is bootstrapped and terminate or end only when the system is shut down. It is simply the way of extending 
+    the functionality of the base OS. It provides and offers several functions that are not available in OS." Its main purpose is to 
+    handle periodic requests and then forward the requests to the appropriate programs for execution ."
+
+15. The daemon that controls that print spooling process is the Line printing daemon.
+
+16. What is the difference between cron and anacron?
+
+    Cron: It is a program in Linux that is used to execute tasks at a scheduled time. It works effectively on machines that
+          run continuously. It expects the system to run 24*7. Its minimum granularity is in minutes. 	
+
+    Anacron: It is a program in Linux that is used to execute tasks at certain intervals. It works effectively on machines that
+              are powered off in a day or week.It does not expect the system to run 24*7. Its minimum granularity only on days.
+
+17. What is load average in Linux?
+
+      Load average, as the name suggests, is the average system load on Linux servers being calculated over a given period of time.
+      The load average of Linux servers can be found using “top” and “uptime” commands. It is simply used to keep track of system
+      resources. It is represented by a decimal number starting at 0.00.  It tells you the load that the system has been under.
+
+18. INODE: It is a unique name given to each file by OS. Each inode has a unique inode number within a file system.
+           It stores various information about files in Linux such as ownership, file size, file type, access mode, number of links, etc.
+
+19. The first process started by the kernel in Linux is “init” and its process id is 1.
+
+
+**** LINUX NETWORKING ****
+
+
+
+
+
+
+
+
+
+  
