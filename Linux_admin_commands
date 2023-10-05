@@ -5,6 +5,9 @@ groupadd grp_name             -> to create a new group
 groups username               -> to check whether a user existed in any group or not.
 sudo useradd -G grp_name username -> to create a new user in an existed group.
 cat /etc/passwd | grep -A 2 -B 2 root -> prints 2 lines after and before the root.
+type command                  -> to know the type of the command
+mkdir -p parent/child         -> to create both parent and child directories in one go
+
 
 
 
