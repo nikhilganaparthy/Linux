@@ -1,3 +1,14 @@
+echo $SHELL
+cd dir1, dir2, dir3         -> to run multiple commands 
+mkdir -p /dir1/dir2/dir3      -> to create both parent and child directories in one go
+rm -r /dir                    -> remove the directory and contents inside it
+cp file1.txt file2.txt        -> copy the files to another file
+rm file1                      -> remove the file
+id -> gives more info about user
+curl https://file.com/file1.txt -O    -> to download a file from internet and save 
+wget https://file.com/file1.txt -O file1.txt
+cat /etc/*release*
+cp -r mydir1 /dir2            -> copy directory and its contents
 ssh user@ip                   -> to switch to perticular server
 useradd username -d /dirpath  -> to create a user in specific directory and make it as users home directory
 useradd username -u id        -> to assign specific id for a user
@@ -6,7 +17,7 @@ groups username               -> to check whether a user existed in any group or
 sudo useradd -G grp_name username -> to create a new user in an existed group.
 cat /etc/passwd | grep -A 2 -B 2 root -> prints 2 lines after and before the root.
 type command                  -> to know the type of the command
-mkdir -p parent/child         -> to create both parent and child directories in one go
+
 
 
 
