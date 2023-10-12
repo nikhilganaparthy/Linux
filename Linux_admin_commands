@@ -9,6 +9,25 @@ curl https://file.com/file1.txt -O    -> to download a file from internet and sa
 wget https://file.com/file1.txt -O file1.txt
 cat /etc/*release*
 cp -r mydir1 /dir2            -> copy directory and its contents
+
+--- Package Managers ---
+
+yum repolist            -> all available repos in local
+ls /etc/yum.repos.d
+yum install package_name      -> searches for the package and lists if installed already.
+yum remove package_name       -> to remove a package
+yum --showduplicates list package_name    -> lists all available versions of the package
+
+--- services ---
+
+systemctl status httpd
+systemctl start httpd
+systemctl enable httpd     -> it starts automatically when system boots up and we dont need to manually start the service.
+systemctl stop httpd
+systemctl disable httpd    -> to configure httpd service to not start whenever system starstup
+systemctl daemon-reload  -> to let systemd know that a new service has been configured
+
+
 ssh user@ip                   -> to switch to perticular server
 useradd username -d /dirpath  -> to create a user in specific directory and make it as users home directory
 useradd username -u id        -> to assign specific id for a user
