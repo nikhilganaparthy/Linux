@@ -28,6 +28,14 @@ systemctl disable httpd    -> to configure httpd service to not start whenever s
 systemctl daemon-reload  -> to let systemd know that a new service has been configured
 
 
+--- DNS ---
+
+cat /etc/hosts         ->  to see DNS names assigned in our local
+cat /etc/resolv.conf   ->  to add or see any DNS as a nameserver 
+cat /etc/resolv.conf   ->  give entry " search yahho.com " for shortcut to access web.yahoo.com
+
+
+
 ssh user@ip                   -> to switch to perticular server
 useradd username -d /dirpath  -> to create a user in specific directory and make it as users home directory
 useradd username -u id        -> to assign specific id for a user
