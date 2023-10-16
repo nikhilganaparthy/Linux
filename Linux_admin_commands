@@ -35,6 +35,15 @@ cat /etc/resolv.conf   ->  to add or see any DNS as a nameserver
 cat /etc/resolv.conf   ->  give entry " search yahho.com " for shortcut to access web.yahoo.com
 
 
+--- Java Build and packaging ---
+
+javac MyClass.java     -> to compile the java application
+java MyClass           -> to run the compiled  code
+javadoc -d doc MyClass.java    -> to document the application we have written
+
+
+
+
 
 ssh user@ip                   -> to switch to perticular server
 useradd username -d /dirpath  -> to create a user in specific directory and make it as users home directory
