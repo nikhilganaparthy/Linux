@@ -41,6 +41,9 @@ javac MyClass.java     -> to compile the java application
 java MyClass           -> to run the compiled  code
 javadoc -d doc MyClass.java    -> to document the application we have written
 
+sudo mvn package    -> to build package from application with maven
+
+
 
 
 
